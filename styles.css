@@ -398,6 +398,8 @@ header {
 }
 
 .portfolio__img {
+    height: 100%;
+    width: 100%;
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
@@ -470,4 +472,29 @@ header {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.portfolio-item-individual a {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+.portfolio-item-individual img:hover {
+    box-shadow: 2px 2px 8px var(--clr-accent);
+}
+
+/* portfolio-item pages link styling */
+.github-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.github-container a {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+.github-container a:hover {
+    color: var(--clr-accent);
 }
