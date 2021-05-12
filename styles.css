@@ -491,10 +491,18 @@ header {
 }
 
 .github-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: var(--clr-dark);
+    background-color: var(--clr-accent);
+    height: 2em;
+    width: 8em;
 }
 
 .github-container a:hover {
     color: var(--clr-accent);
+    background-color: var(--clr-dark);
+    transform: scale(1.05);
 }
