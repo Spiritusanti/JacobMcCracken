@@ -126,6 +126,15 @@ h3 {
     font-size: var(--fs-h3);
 }
 
+.section__subtitle span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section__subtitle span img {
+    padding-left: 5px;
+}
+
 .section__subtitle--intro, 
 .section__subtitle--about {
     background: var(--clr-accent);
