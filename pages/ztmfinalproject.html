@@ -13,7 +13,7 @@
     <!-- header section -->
     <header>
         <div class="logo">
-            <img src="../img/download.svg" alt="placeholder">
+            <img src="../img/download.svg" alt="Jacob McCracken">
         </div>
 
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -21,38 +21,40 @@
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="index.html#services">My Services</a></li>
-                <li class="nav__item"><a class="nav__link" href="index.html#about">About Me</a></li>
-                <li class="nav__item"><a class="nav__link" href="index.html#work">My Work</a></li>
+                <li class="nav__item"><a class="nav__link" href="../index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="../index.html#services">My Services</a></li>
+                <li class="nav__item"><a class="nav__link" href="../index.html#about">About Me</a></li>
+                <li class="nav__item"><a class="nav__link" href="../index.html#work">My Work</a></li>
             </ul>
         </nav>
     </header>
     <!-- Introduction -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            <strong>A Clothing Company</strong>
+            <strong>Smart Brain v1</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">
             <span>
                 <img src="../img/react-logo-svgrepo-com.svg" height="50" alt="React logo">
-                <img src="../img/nodejs-icon.svg" height="50" alt="node js icon">
                 <img src="../img/clarifai.svg" height="50" alt="clarifai logo">
+                <img src="../img/nodejs-icon.svg" height="50" alt="node js icon">
+                <img src="../img/expressjs-ar21.svg" height="50" alt="express logo">
+                <img src="../img/postgresql-icon.svg" height="50" alt="PostgreSQL logo">
             </span>
         </p>
         <img src="../img/ztmfinal-loggedin.png" alt="a picture of project landing page" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
-        <p><strong>Main Project of the Complete React Developer in 2021(w/ Redux, Hooks, GraphQL) from the Zero to Mastery Academy</strong></p>
-        <p>The project was built using Create-React-App, Redux, Styled Components, Google Firebase, and accepts payment via Stripe API</p>
+        <p><strong>Final Project of the <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank" rel="noopener noreferrer">Complete Web Developer</a> course from the Zero to Mastery Academy</strong></p>
+        <p>First full stack project built using Create React App for the front-end client and Node Express.js backend using the Clarifai API to detect faces in photos provided to the client by user provided URLS. This project authenticates users utilizing a PostgreSQL database to store user data and hashes passwords using a now deprecated bcrypt dependency.</p>
         <hr />
-        <a href="https://aclothingcompany-live.herokuapp.com/" target="_blank"><img src="../img/ztm-signin.png" alt="Website shop page"></a>
-        <a href="https://aclothingcompany-live.herokuapp.com/" target="_blank"><img src="../img/ztmfinal-loggedin-2.png" alt="Website shop page"></a>
-        <p>Project facilitated a deep dive into the React ecosystem from basic syntax to implementing React Router, Redux, and Firebase with hosting via Heroku</p>
-        <p>This is the most complex project I have built to date with React and I found it challenging to keep up with its complexity. The most challenging part was implementing Firebase and linking it up to facilitate storing/creating/accessing user info and authentication both through Google's auth service as well as the custom authentication</p>
+        <a href="https://ztmfinalproject.herokuapp.com/" target="_blank"><img src="../img/ztm-signin.png" alt="landing page"></a>
+        <a href="https://ztmfinalproject.herokuapp.com/" target="_blank"><img src="../img/ztmfinal-loggedin-2.png" alt="website after log in"></a>
+        <p>This project was my first implementation of Node and express.js. Testing of the backend API was accomplished with Postman and the database was built using PgAdmin 4 locally before switching to Heroku Postgres for deployment</p>
+        <p>If you're curious to try it use can use the login: test2@test.com and password: test123 or register your own credentials. This version is limited to only detecting a single face per photo which is improved in Version 2 of this application</p>
         <div class="github-container">
-            <A href="https://github.com/Spiritusanti/A-Clothing-Company" target="_blank">
+            <A href="https://github.com/Spiritusanti/ZTM-Final-Project" target="_blank">
                 <i class="fab fa-github"> github repo</i>
             </A>
         </div>
@@ -71,6 +73,6 @@
         </ul>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

@@ -483,6 +483,11 @@ header {
     margin-right: auto;
 }
 
+.portfolio-item-individual .pets {
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio-item-individual img {
     padding-top: 5px;
 }
