@@ -483,9 +483,17 @@ header {
     margin-right: auto;
 }
 
+.portfolio-item-individual img {
+    padding-top: 5px;
+}
+
 .portfolio-item-individual a {
     text-decoration: none;
+    font-weight: bold;
     color: var(--clr-dark);
+}
+.portfolio-item-individual a:hover {
+    color: var(--clr-accent);
 }
 
 .portfolio-item-individual img:hover {
