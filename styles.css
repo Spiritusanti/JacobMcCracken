@@ -399,11 +399,50 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
 }
 
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    position: relative;
+}
+
+.portfolio__item--link {
+    text-decoration: none;
+
+}
+
+.portfolio__item--link label {
+    color: var(--clr-accent);
+    background-color: var(--clr-dark);
+    text-align: center;
+    height: 2.5em;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    box-shadow: var(--bs);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-reg);
+    letter-spacing: 2px;
+    z-index: 3;
+    border-radius: 10px;
+    opacity: .9;
+}
+
+.portfolio__item--link:hover label,
+.portfolio__item--link:focus label {
+    transform: translateX(-200%);
+}
+
+
+.portfolio__item--title:hover,
+.portfolio__item--title:focus {
+    transform: translateX(100%);
 }
 
 .portfolio__img {
