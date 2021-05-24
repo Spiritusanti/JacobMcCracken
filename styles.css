@@ -83,6 +83,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -330,6 +331,11 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
+    padding: 1em;
+    background-color: var(--clr-dark);
+    opacity: .8;
+    box-shadow: var(--bs);
+    border-radius: 10px;
 }
 
 @media (min-width: 800px) {
