@@ -330,7 +330,7 @@ header {
 
 .service {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 1em;
     background-color: var(--clr-dark);
     opacity: .8;
