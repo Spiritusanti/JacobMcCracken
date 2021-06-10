@@ -362,6 +362,11 @@ header {
     box-shadow: var(--bs);
 }
 
+.about-me__body a {
+    text-decoration: none;
+    color: var(--clr-accent);
+}
+
 
 @media (min-width: 600px) {
     .about-me {
