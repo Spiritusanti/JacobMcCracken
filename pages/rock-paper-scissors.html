@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles.css" media="screen">
+    <title>Jacob McCracken</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/download.svg" alt="placeholder">
+            </a>
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#services">My Services</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#about">About Me</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#work">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            <strong>Rock Paper Scissors</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+            <span>
+                <img src="../img/Typescript_logo_2020.svg.png" height="50" alt="typescript logo">
+                <img src="../img/next-js-seeklogo.com.svg" height="50" alt="next js logo">
+                <img src="../img/redux-logo-svgrepo-com.svg" height="50" alt="redux logo">
+            </span>
+        </p>
+        <img src="../img/rpslandingpage.png" alt="a picture of project landing page" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p><strong>Rock Paper Scissors game built for the Mintbean.io August 2021 Hiring Hackathon</strong></p>
+        <p>The user is up against the evil Computer-san, worshiper of RNGesus with the goal of wining a rock paper scissors match. Avoid the rick-roll and good luck!</p>
+        <hr />
+        <a href="https://rps-janken.netlify.app/" target="_blank" rel="noreferrer"><img src="../img/rpsfirstRound.png" alt="Website shop page"></a>
+        <p>One bug I had which prompted switching to redux, occurred when setting up the logic to determine Computer-San's move. The original implementation used a useEffect and useState hook to trigger the selection logic and set the state to use in the win/loss function. This worked fine during the initial set up but ran into issues when linking up to the parent component state where it triggered multiple renders and several infinite loops. </p>
+        <p>I attempted to nail it down and get a single render and set state however, I ended up wasting a day attempting to nail it down by attempting to move the logic into parent components and trying to trigger it with the logic that set the playerMove state. Unfortunately the bug persisted and would have taken me more time to solve than I had available and my state was getting complex anyway which is when I reached for Redux and Redux Toolkit. This decision completely eliminated both issues and allowed me to cut down significantly on duplicate code and prop drilling in the game itself and resulted in a more stable experience overall.</p>
+        <p>This change allowed me to complete my stretch goals as well and turn the game into a progressive web app to take and enjoy on the go and earned the Mintbean Star Award!</p>
+        <div class="github-container">
+            <A href="https://github.com/Spiritusanti/HackathonProject" target="_blank" rel="noreferrer"> 
+                <i class="fab fa-github"> github repo</i>
+            </A>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:mccrackenjacob@gmail.com" class="footer__link">mccrackenjacob@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-lis__item"><a href="https://github.com/Spiritusanti" class="social-list__link" rel="noreferrer">
+                <i class="fab fa-github"></i>
+            </a></li>
+            <li class="social-lis__item"><a href="https://www.linkedin.com/in/jacob-mccracken/" class="social-list__link" rel="noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li class="social-lis__item"><a href="https://www.instagram.com/mccracken_jacob/" target="_blank" class="social-list__link" rel="noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles.css" media="screen">
+    <title>Jacob McCracken</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/download.svg" alt="placeholder">
+            </a>
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#services">My Services</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#about">About Me</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#work">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            <strong>StoryBook</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+            <span>
+                <img src="../img/next-js-seeklogo.com.svg" height="50" alt="next.js logo">
+                <img src="../img/Typescript_logo_2020.svg.png" height="50" alt="Typescript">
+            </span>
+        </p>
+        <img src="../img/storybookLandingPage.png" alt="a picture of project landing page" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p><strong>Interactive illustrated storybook app built for the Mintbean.io November 2021 Hiring Hackathon</strong></p>
+        <p>This app was inspire by mad-libs but instead of filling in words you create your own illustrations for the story and then see the final result at the end. My goal for this hackathon was to work with a UI/UX designer for the first time and improve my React fundamentals both of which I accomplished.</p>
+        <hr />
+        <a href="https://mintbean-november-hackathon-project.vercel.app/" target="_blank" rel="noreferrer"><img src="../img/storybookInteractive.png" alt="an image of the storybook drawing application use."></a>
+        <p>One feature I tried to implement but failed to was similar to the fill function from MS paint where you are able to fill in a drawn object with a selected color. My first attempt at this feature used the canvas API .fill() method to add this in. This worked to an extent but only on the current path object and not on any other previously drawn path. One method I used to attempt to solve this was to store drawn paths in an array of an array(tuples) of coordinates and then select them to fill in.</p>
+        <p>However, I got stuck trying to figure out how to pass those to the .region method as well as how to add id's to the drawn canvas objects. This was 4 days into the hackathon and held me up from making progress on the other parts. I reviewed the requirements again and realized I could fullfill them by only allowing drawing so I made the decision to drop the feature and focus on finishing the app to satisfy the requirements.</p>
+        <p>My teammate <a href="https://www.christoribio.com/" target="_blank" rel="noreferrer">Chris Toribio</a> and I managed to complete the app and received the Mintbean Star Award for our work.</p>
+        <div class="github-container">
+            <A href="https://github.com/Spiritusanti/A-Clothing-Company" target="_blank" rel="noreferrer"> 
+                <i class="fab fa-github"> github repo</i>
+            </A>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:mccrackenjacob@gmail.com" class="footer__link">mccrackenjacob@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-lis__item"><a href="https://github.com/Spiritusanti" class="social-list__link" rel="noreferrer">
+                <i class="fab fa-github"></i>
+            </a></li>
+            <li class="social-lis__item"><a href="https://www.linkedin.com/in/jacob-mccracken/" class="social-list__link" rel="noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li class="social-lis__item"><a href="https://www.instagram.com/mccracken_jacob/" target="_blank" class="social-list__link" rel="noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
